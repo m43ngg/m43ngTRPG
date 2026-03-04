@@ -593,14 +593,14 @@ td:last-child, th:last-child{ width: 64px; min-width:64px; padding-right:14px !i
 </div>
 <div class="section">
 <div class="settings">
-<button id="rollBtn">굴림</button>
+<button id="rollBtn">롤</button>
 <button id="copyBtn">복사</button>
-<button id="rollCopyBtn">굴림+복사</button>
+<button id="rollCopyBtn">롤+복사</button>
 <span id="message"></span>
 </div>
 <div class="settings">
 <button id="cpCopyBtn">채팅팔레트 복사</button>
-<button id="rollCpCopyBtn">굴림+채팅팔레트 복사</button>
+<button id="rollCpCopyBtn">롤+채팅팔레트 복사</button>
 </div>
 </div>
 <div class="section"><div class="sectionTitle"></div><div class="skill-command-grid"><div class="sc-col"><div class="command-table">
@@ -948,7 +948,7 @@ td:last-child, th:last-child{ width: 64px; min-width:64px; padding-right:14px !i
 					SAN: "이성",
 				};
 
-				if (sanToggleEL.checked) cmds.push("CC<={SAN} 이성굴림");
+				if (sanToggleEL.checked) cmds.push("CC<={SAN} 이성");
 
 				["STR", "CON", "POW", "DEX", "APP", "SIZ", "INT", "EDU"].forEach((l) => {
 					const v = document.getElementById("val-" + l).value;
