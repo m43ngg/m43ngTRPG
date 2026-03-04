@@ -46,7 +46,7 @@ body{
   padding-top:0;
 }
 
-er{
+header{
   position:sticky;
   top:0;
   z-index:1000;
@@ -54,7 +54,7 @@ er{
   color:#fff;
   box-shadow:0 8px 18px rgba(0,0,0,.08);
 }
-er h1{
+header h1{
   max-width:960px;
   margin:0 auto;
   padding:14px 18px;
@@ -812,7 +812,7 @@ td:last-child, th:last-child{ width: 64px; min-width:64px; padding-right:14px !i
 					return;
 				}
 
-				if (confirm(`「${selectedKey.substring("coc7_savedData_".length)}」のデータを삭제してもよろしいですか？`)) {
+				if (confirm(`「${selectedKey.substring("coc7_savedData_".length)}」데이터를 삭제할까요?`)) {
 					localStorage.removeItem(selectedKey);
 					showSaveMessage("데이터 삭제 완료");
 					updateDataList();
